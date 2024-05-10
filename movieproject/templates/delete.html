@@ -1,0 +1,23 @@
+
+{% extends 'base.html'%}
+{% load static%}
+
+{% block title%}
+Add
+{%endblock%}
+
+
+{% block content%}
+<h1>Delete Movie</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <p>Are you sure you want to delete </p>
+
+    <button type="submit">submit</button>
+
+</form>
+
+
+{% endblock%}
